@@ -1,0 +1,12 @@
+
+
+<h2 class="text-center">{{recipes.recipeID.title}}</h2>
+<p class="text-center">Find a recipe to add to your weekly meal plan.</p>
+
+
+<div class="list-group" *ngFor="let recipe of recipes">
+  <a [routerLink]="['/viewrecipe',recipe.id]" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">{{recipe.title}}</h5>
+      <img src="{{recipe.image}}" width="250px" height="150px">
+    </div>

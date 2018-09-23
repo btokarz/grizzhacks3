@@ -1,0 +1,21 @@
+<h1 class="text-center">Ingredient Shopping List</h1>
+<br>
+<app-add-item></app-add-item>
+<br>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Ingredient Name</th>
+      <th scope="col">Amount of Ingredient Needed</th>
+      <th scope="col">Remove Ingredient</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let ingredient of ingredients">
+    <tr>
+      <td>{{ingredient.item}}</td>
+      <td>{{ingredient.amount}}</td>
+      <td><button type="button" (click)="deleteIngredient(ingredient)" class="btn btn-secondary">Remove Item</button></td>
+    </tr>
+  </tbody>
+</table>

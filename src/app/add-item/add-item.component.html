@@ -1,0 +1,13 @@
+<form (ngSubmit)="onSubmit()">
+    <div class="form-row align-items-center">
+      <div class="col-md-5 my-1">
+        <input type="text" class="form-control" id="ingredientInput" placeholder="Ingredient Name" [(ngModel)]="ingredient.item" name="item">
+      </div>
+      <div class="col-md-5 my-1">
+        <input type="text" class="form-control" id="amountInput" placeholder="Amount Needed" [(ngModel)]="ingredient.amount" name="amount">
+      </div>
+      <div class="col-auto my-1">
+        <button type="submit" value="Submit" class="btn btn-dark">Add to List</button>
+      </div>
+    </div>
+  </form>
