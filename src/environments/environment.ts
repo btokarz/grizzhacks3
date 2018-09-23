@@ -5,12 +5,6 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyBExj3UZvu8EvRfc_WTtzLpJWrRMB9NSKs",
-    authDomain: "grizzhacks3.firebaseapp.com",
-    databaseURL: "https://grizzhacks3.firebaseio.com",
-    projectId: "grizzhacks3",
-    storageBucket: "grizzhacks3.appspot.com",
-    messagingSenderId: "65453316406"
   }
 };
 
